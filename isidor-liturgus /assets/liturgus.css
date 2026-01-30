@@ -1,0 +1,328 @@
+/* Liturgus Dashboard */
+.liturgus-dashboard {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.liturgus-section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.liturgus-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0073aa;
+}
+
+.liturgus-section-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.liturgus-section h2 {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 2px solid #0073aa;
+    padding-bottom: 10px;
+}
+
+/* Grid für Karten */
+.liturgus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.liturgus-card {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.liturgus-card-header {
+    background: #f5f5f5;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.liturgus-card-header strong {
+    font-size: 14px;
+    color: #333;
+}
+
+.liturgus-card-header span {
+    font-size: 13px;
+    color: #666;
+}
+
+.liturgus-card-body {
+    padding: 10px;
+}
+
+.liturgus-slot {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.liturgus-slot:last-child {
+    border-bottom: none;
+}
+
+.liturgus-slot-info {
+    flex: 1;
+}
+
+.liturgus-slot-info strong {
+    display: block;
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.liturgus-names {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.liturgus-name {
+    display: inline-block;
+    padding: 2px 6px;
+    background: #e7f5ff;
+    color: #0066cc;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.liturgus-name-backup {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.liturgus-actions {
+    display: flex;
+    gap: 5px;
+    align-items: flex-start;
+}
+
+/* Buttons */
+.liturgus-btn {
+    padding: 4px 8px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all 0.2s;
+    background: #46b450;
+    color: white;
+}
+
+.liturgus-btn:hover {
+    background: #3a9943;
+}
+
+.liturgus-btn-sm {
+    padding: 3px 6px;
+    font-size: 11px;
+}
+
+.liturgus-btn-backup {
+    background: #ffb900;
+    color: white;
+}
+
+.liturgus-btn-backup:hover {
+    background: #e6a700;
+}
+
+.liturgus-btn-danger {
+    background: #dc3232;
+    color: white;
+}
+
+.liturgus-btn-danger:hover {
+    background: #c52929;
+}
+
+.liturgus-btn-secondary {
+    background: #666;
+    color: white;
+}
+
+.liturgus-btn-secondary:hover {
+    background: #555;
+}
+
+/* Tabelle */
+.liturgus-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.liturgus-table th,
+.liturgus-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.liturgus-table th {
+    background: #f5f5f5;
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+}
+
+.liturgus-table td {
+    font-size: 13px;
+    color: #333;
+}
+
+.liturgus-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.liturgus-badge-backup {
+    background: #fff3cd;
+    color: #856404;
+}
+
+/* Modal */
+.liturgus-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+
+.liturgus-modal-content {
+    background: white;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 90vh;
+    overflow: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.liturgus-modal-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.liturgus-modal-header h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.liturgus-modal-close {
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    color: #666;
+    font-weight: normal;
+}
+
+.liturgus-modal-close:hover {
+    color: #333;
+}
+
+.liturgus-modal-body {
+    padding: 20px;
+}
+
+.liturgus-modal-body p {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.liturgus-modal-body label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.liturgus-modal-body label strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #333;
+}
+
+.liturgus-input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.liturgus-input:focus {
+    outline: none;
+    border-color: #0073aa;
+    box-shadow: 0 0 0 1px #0073aa;
+}
+
+.liturgus-modal-footer {
+    padding: 15px 20px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .liturgus-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .liturgus-table {
+        font-size: 12px;
+    }
+    
+    .liturgus-table th,
+    .liturgus-table td {
+        padding: 8px 5px;
+    }
+    
+    .liturgus-modal-content {
+        width: 95%;
+        max-width: 95%;
+    }
+}
